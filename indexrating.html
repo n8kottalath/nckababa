@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="favlogo.ico">
+	  <title> NC Circuit | Outfitters </title>
+    <style>
+      body {
+	background: linear-gradient(-45deg, #000000, #000000, #7a4900, rgba(0, 0, 0, 0.751),  #ffbb00);
+	background-size: 1100% 1100%;
+	animation: gradient 15s ease infinite;
+	max-height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+      }
+      
+      .logo {
+    width: 25rem;
+    height: 25rem;
+    /* box-shadow: #f3fffd; */
+    align-self: left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.3) rotate(0deg);
+    animation: bounce 0.3s ease-out;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Social-media{
+  display: flex;
+  justify-content: center;
+}
+a{
+  display: flex;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.5s
+}
+a i{
+  font-size: 35px;
+  color:#fff;
+  transition: transform 0.5s;
+}
+a:hover{
+  transform: translateY(2px);
+}
+a:hover i{
+  transform: scale(0.90);
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* Styling h1 and links
+––––––––––––––––––––––––––––––––– */
+h1[alt="Simple"] {color: white;}
+a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
+
+
+body
+
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before { 
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 8em;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+
+.starrating > label
+{
+  color: #222222; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
+
+
+    </style>
+    
+  </head>
+  <body>
+    
+    <div class="logo-container">
+      
+      <img src="logo.png" alt="Logo" class="logo">
+    <div class="bottom-nav">
+      <div class="navigation">
+        <div class="Social-media">
+          <a href="tel:+917025336650"><font color="#007cc4"><i class="fa-solid fa-phone"></i></font></a>
+          <a href="https://wa.me/917025336650"><font color="#007cc4"><i class="fab fa-whatsapp"></i></font></a>
+          <a href="https://www.instagram.com/nc.circuit.outfitters/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+          <a href="mailto:outfitters@nccircuit.com"><font color="#007cc4"><i class="fa-regular fa-envelope"></i></a></font>
+        </div>
+      </div>
+    </div>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+     
+    
+            <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star">5</label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+            </div>
+      	
+    
+    <h2 class="text-center" alt="Simple"><a href="http://themastercut.co">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>
