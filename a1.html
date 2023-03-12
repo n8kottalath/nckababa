@@ -113,9 +113,14 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
 .starrating > input:hover ~ label
 { color: #ffca08 ;  } /* Set yellow color when star hover */
 
+.form-label{
+    font-size: 1rem !important;
+    font-weight: bolder;
+  }
+
 @media screen and (max-width: 988px) {
   .form-label{
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     font-weight: bolder;
   }
 
@@ -124,9 +129,12 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
       font-size:3rem;
   }
 
-  textarea[type="text"]
-  {
-      font-size:2rem;
+  textarea{
+  font-size: 3rem!important;
+  }
+
+  textarea::placeholder {
+  font-size: 3rem;
   }
 }
 
@@ -139,7 +147,7 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
     
     <div class="logo-container">
       <img src="logo.png" alt="Logo" class="logo">
-      <h1 class="text-white text-left my-5" style="font-size: 3rem;" >You are @ Alladin 1</h1>
+      <h1 class="text-white text-left my-5" style="font-size: 3rem;" >You are at Alladin - 01</h1>
       <form id="submit-form" action="" class="container text-white">
         <div class="col-md-12 pb-4 px-0" ;>
           <label for="name" class="form-label">I'm</label>
@@ -150,11 +158,11 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
           <div class="col-auto mb-5">
             <label for="flavour&quality" class="form-label">Flavour of kebab</label>
             <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
-              <input type="radio" id="flavour5" name="flavour&quality" value="5" /><label for="flavour5" title="5 star"></label>
-              <input type="radio" id="flavour4" name="flavour&quality" value="4" /><label for="flavour4" title="4 star"></label>
-              <input type="radio" id="flavour3" name="flavour&quality" value="3" /><label for="flavour3" title="3 star"></label>
-              <input type="radio" id="flavour2" name="flavour&quality" value="2" /><label for="flavour2" title="2 star"></label>
-              <input type="radio" id="flavour1" name="flavour&quality" value="1" /><label for="flavour1" title="1 star"></label>
+              <input type="radio" id="flavour5" name="flavour" value="5" /><label for="flavour5" title="5 star"></label>
+              <input type="radio" id="flavour4" name="flavour" value="4" /><label for="flavour4" title="4 star"></label>
+              <input type="radio" id="flavour3" name="flavour" value="3" /><label for="flavour3" title="3 star"></label>
+              <input type="radio" id="flavour2" name="flavour" value="2" /><label for="flavour2" title="2 star"></label>
+              <input type="radio" id="flavour1" name="flavour" value="1" /><label for="flavour1" title="1 star"></label>
             </div>
           </div>
   
@@ -185,11 +193,11 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
           <div class="col-auto mb-5">
             <label for="ambience" class="form-label">Affordability & Quantity</label>
             <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
-              <input type="radio" id="ambience5" name="ambience" value="5" /><label for="ambience5" title="5 star"></label>
-              <input type="radio" id="ambience4" name="ambience" value="4" /><label for="ambience4" title="4 star"></label>
-              <input type="radio" id="ambience3" name="ambience" value="3" /><label for="ambience3" title="3 star"></label>
-              <input type="radio" id="ambience2" name="ambience" value="2" /><label for="ambience2" title="2 star"></label>
-              <input type="radio" id="ambience1" name="ambience" value="1" /><label for="ambience1" title="1 star"></label>
+              <input type="radio" id="ambience5" name="Affordability&Quantity" value="5" /><label for="ambience5" title="5 star"></label>
+              <input type="radio" id="ambience4" name="Affordability&Quantity" value="4" /><label for="ambience4" title="4 star"></label>
+              <input type="radio" id="ambience3" name="Affordability&Quantity" value="3" /><label for="ambience3" title="3 star"></label>
+              <input type="radio" id="ambience2" name="Affordability&Quantity" value="2" /><label for="ambience2" title="2 star"></label>
+              <input type="radio" id="ambience1" name="Affordability&Quantity" value="1" /><label for="ambience1" title="1 star"></label>
             </div>
           </div>
         </div>          
@@ -197,18 +205,17 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
         
         <div class="col-md-12 px-0 pb-4">
           <label for="review" class="form-label">Suggestions if any</label>
-          <textarea placeholder="Type Here" name="review" type="text" class="form-control" rows="10" id="review" style="opacity: 35%; border:#fff; border-radius: 10px; " >
-          </textarea>
+          <textarea placeholder="Type Here" name="review" class="form-control" rows="5" id="review" style="opacity: 35%; border:#fff; border-radius: 10px; " ></textarea>
         </div>
         
-        <div class="col-12 px-0 mb-5">
+        <div class="col-12 px-0">
           <input value="Submit" style="color: #000; font-weight: bolder;" type="submit" class="btn btn-warning btn-lg">
         </div>
       </form>
 
     </div>
       
-    <div class="bottom-nav mt-5">
+    <div class="bottom-nav mt-lg-5">
       <div class="navigation">
         <div class="Social-media">
           <a href="tel:+918281681163"><font color="#007cc4"><i class="fa-solid fa-phone"></i></font></a>
