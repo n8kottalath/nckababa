@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="favlogo.ico">
+	  <title> NC Circuit | Kababa </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      body {
+	background: linear-gradient(-45deg, #000000, #000000, #7a4900, rgba(0, 0, 0, 0.751),  #ffbb00);
+	background-size: 1100% 1100%;
+	animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+      .logo-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+      }
+      
+      .logo {
+    width: 10rem;
+    height: 10rem;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.3) rotate(0deg);
+    animation: bounce 0.3s ease-out;
+  }
+  
+  .bottom-nav {
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Social-media{
+  display: flex;
+  justify-content: center;
+}
+a{
+  display: flex;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.5s
+}
+a i{
+  font-size: 35px;
+  color:#fff;
+  transition: transform 0.5s;
+}
+a:hover{
+  transform: translateY(2px);
+}
+a:hover i{
+  transform: scale(0.90);
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* Styling h1 and links
+––––––––––––––––––––––––––––––––– */
+h1[alt="Simple"] {color: white;}
+a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
+
+
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before { 
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 4rem;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+
+.starrating > label
+{
+  color: #222222; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
+.form-label{
+    font-family: sans-serif;
+    font-size: 1rem !important;
+    font-weight: 400;
+  }
+
+@media screen and (max-width: 988px) {
+  .form-label{
+    font-size: 2.5rem !important;
+    font-weight: 400;
+  }
+
+  input[type="text"]
+  {
+      font-size:3rem;
+  }
+
+  textarea{
+  font-size: 3rem!important;
+  }
+
+  textarea::placeholder {
+  font-size: 3rem;
+  }
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="text-white text-left my-5" style="font-size: 3rem; font-family: 'Courier New', Courier, monospace;" >You are at Alladin - 03</h1>
+      <form id="submit-form" action="" class="container text-white">
+        <div class="col-md-12 pb-4 px-0" ;>
+          <label for="name" class="form-label">I'm</label>
+          <input required name="name" placeholder="Your Name" type="text" class="form-control form-control-lg" id="name" style="opacity: 35%; border:#fff; border-radius: 10px; height: 5rem;" > 
+        </div>
+
+        <div class="d-flex justify-content-between flex-wrap"> 
+          <div class="col-auto mb-5">
+            <label for="flavour&quality" class="form-label">Flavour of kebab</label>
+            <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
+              <input type="radio" id="flavour5" name="flavour" value="5" /><label for="flavour5" title="5 star"></label>
+              <input type="radio" id="flavour4" name="flavour" value="4" /><label for="flavour4" title="4 star"></label>
+              <input type="radio" id="flavour3" name="flavour" value="3" /><label for="flavour3" title="3 star"></label>
+              <input type="radio" id="flavour2" name="flavour" value="2" /><label for="flavour2" title="2 star"></label>
+              <input type="radio" id="flavour1" name="flavour" value="1" /><label for="flavour1" title="1 star"></label>
+            </div>
+          </div>
+  
+          <div class="col-auto mb-5">
+            <label for="authentickehva" class="form-label">Authentic Kashmiri saffron kehwa</label>
+            <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
+              <input type="radio" id="authentickehva5" name="authentickehva" value="5" /><label for="authentickehva5" title="5 star"></label>
+              <input type="radio" id="authentickehva4" name="authentickehva" value="4" /><label for="authentickehva4" title="4 star"></label>
+              <input type="radio" id="authentickehva3" name="authentickehva" value="3" /><label for="authentickehva3" title="3 star"></label>
+              <input type="radio" id="authentickehva2" name="authentickehva" value="2" /><label for="authentickehva2" title="2 star"></label>
+              <input type="radio" id="authentickehva1" name="authentickehva" value="1" /><label for="authentickehva1" title="1 star"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between flex-wrap"> 
+          <div class="col-auto mb-5">
+            <label for="staff&serving" class="form-label">Customer service & Counter staff</label>
+            <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
+              <input type="radio" id="staff&serving5" name="staff&serving" value="5" /><label for="staff&serving5" title="5 star"></label>
+              <input type="radio" id="staff&serving4" name="staff&serving" value="4" /><label for="staff&serving4" title="4 star"></label>
+              <input type="radio" id="staff&serving3" name="staff&serving" value="3" /><label for="staff&serving3" title="3 star"></label>
+              <input type="radio" id="staff&serving2" name="staff&serving" value="2" /><label for="staff&serving2" title="2 star"></label>
+              <input type="radio" id="staff&serving1" name="staff&serving" value="1" /><label for="staff&serving1" title="1 star"></label>
+            </div>
+          </div>
+
+          <div class="col-auto mb-5">
+            <label for="ambience" class="form-label">Affordability & Quantity</label>
+            <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
+              <input type="radio" id="ambience5" name="Affordability&Quantity" value="5" /><label for="ambience5" title="5 star"></label>
+              <input type="radio" id="ambience4" name="Affordability&Quantity" value="4" /><label for="ambience4" title="4 star"></label>
+              <input type="radio" id="ambience3" name="Affordability&Quantity" value="3" /><label for="ambience3" title="3 star"></label>
+              <input type="radio" id="ambience2" name="Affordability&Quantity" value="2" /><label for="ambience2" title="2 star"></label>
+              <input type="radio" id="ambience1" name="Affordability&Quantity" value="1" /><label for="ambience1" title="1 star"></label>
+            </div>
+          </div>
+        </div>          
+        
+        
+        <div class="col-md-12 px-0 pb-4">
+          <label for="review" class="form-label">Suggestions if any</label>
+          <textarea placeholder="Type Here" name="review" class="form-control" rows="5" id="review" style="opacity: 35%; border:#fff; border-radius: 10px; " ></textarea>
+        </div>
+        
+        <div class="col-12 px-0">
+          <input value="Submit" style="color: #000; font-weight: bolder;" type="submit" class="btn btn-warning btn-lg">
+        </div>
+      </form>
+
+    </div>
+      
+    <div class="bottom-nav mt-lg-5">
+      <div class="navigation">
+        <div class="Social-media">
+          <a href="tel:+918281681163"><font color="#007cc4"><i class="fa-solid fa-phone"></i></font></a>
+          <a href="https://wa.me/918281681163"><font color="#007cc4"><i class="fab fa-whatsapp"></i></font></a>
+          <a href="https://www.instagram.com/nc.circuit.kababa/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+          <a href="mailto:kababa@nccircuit.com"><font color="#007cc4"><i class="fa-regular fa-envelope"></i></a></font>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbyKRiB27Wv1OD8MHmYjA42B6OyjUCiYWwYxwa2wHz_26fIpOjTHrDsl4ZS9vUTK4LvCcQ/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Thank You For Your Valuable Feedback")
+                  window.location.reload()
+              },
+              error:function (err){
+                  alert("Something Error")
+                  console.log(err)
+  
+              }
+          })
+      })
+  </script>
+
+  </body>
+</html>
